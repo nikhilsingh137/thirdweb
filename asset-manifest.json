@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/nikhilsingh137/thirdweb.git/static/css/main.1c36c1bc.css",
-    "main.js": "/nikhilsingh137/thirdweb.git/static/js/main.fa0b9060.js",
-    "static/media/thirdweb-removebg-preview.png": "/nikhilsingh137/thirdweb.git/static/media/thirdweb-removebg-preview.acc68bb03914a1268e29.png",
-    "index.html": "/nikhilsingh137/thirdweb.git/index.html",
-    "main.1c36c1bc.css.map": "/nikhilsingh137/thirdweb.git/static/css/main.1c36c1bc.css.map",
-    "main.fa0b9060.js.map": "/nikhilsingh137/thirdweb.git/static/js/main.fa0b9060.js.map"
+    "main.css": "/nikhilsingh137/thirdweb/static/css/main.1c36c1bc.css",
+    "main.js": "/nikhilsingh137/thirdweb/static/js/main.9b2e115d.js",
+    "static/media/thirdweb-removebg-preview.png": "/nikhilsingh137/thirdweb/static/media/thirdweb-removebg-preview.acc68bb03914a1268e29.png",
+    "index.html": "/nikhilsingh137/thirdweb/index.html",
+    "main.1c36c1bc.css.map": "/nikhilsingh137/thirdweb/static/css/main.1c36c1bc.css.map",
+    "main.9b2e115d.js.map": "/nikhilsingh137/thirdweb/static/js/main.9b2e115d.js.map"
   },
   "entrypoints": [
     "static/css/main.1c36c1bc.css",
-    "static/js/main.fa0b9060.js"
+    "static/js/main.9b2e115d.js"
   ]
 }
