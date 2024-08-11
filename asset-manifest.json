@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/nikhilsingh137/thirdweb.git/static/css/main.1c36c1bc.css",
+    "main.js": "/nikhilsingh137/thirdweb.git/static/js/main.fa0b9060.js",
+    "static/media/thirdweb-removebg-preview.png": "/nikhilsingh137/thirdweb.git/static/media/thirdweb-removebg-preview.acc68bb03914a1268e29.png",
+    "index.html": "/nikhilsingh137/thirdweb.git/index.html",
+    "main.1c36c1bc.css.map": "/nikhilsingh137/thirdweb.git/static/css/main.1c36c1bc.css.map",
+    "main.fa0b9060.js.map": "/nikhilsingh137/thirdweb.git/static/js/main.fa0b9060.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1c36c1bc.css",
+    "static/js/main.fa0b9060.js"
+  ]
+}
