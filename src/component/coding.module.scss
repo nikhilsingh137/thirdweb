@@ -1,0 +1,144 @@
+.coding {
+  display: block;
+  margin-top: 60px;
+  .wrapper {
+    width: 1170px;
+    margin: auto;
+    padding-bottom: 60px;
+    .heading {
+      display: block;
+      text-align: center;
+      h2 {
+        font-size: 30px;
+        color: #007acc;
+        margin: 0;
+      }
+      h3 {
+        color: #fff;
+        font-size: 50px;
+        margin: 0;
+        padding-top: 10px;
+      }
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 80px;
+      .withoutThirdWeb {
+        width: 48%;
+
+        .header {
+          display: block;
+          background: #111;
+          text-align: center;
+          padding: 8px;
+          h2 {
+            font-size: 22px;
+            color: #666;
+            margin: 0;
+          }
+        }
+        .codecontainer {
+          font-family: monospace;
+          white-space: pre;
+          color: #abb2bf;
+          background: #222;
+          padding: 10px 20px;
+          height: 400px;
+          overflow-y: scroll;
+
+          .tokenLine {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            gap: 5px;
+            flex-wrap: wrap;
+            span {
+              font-size: 16px;
+            }
+            .tokenComment {
+              color: green;
+              font-size: 16px;
+            }
+
+            .lineNumber {
+              color: #ddd;
+              margin-right: 10px;
+              font-size: 1.5em;
+            }
+
+            .token {
+              &.comment {
+                color: rgb(106, 153, 85);
+              }
+
+              &.keyword {
+                color: #007acc;
+              }
+
+              &.variable {
+                color: #e06c75;
+              }
+
+              &.string {
+                color: #98c379;
+              }
+
+              &.function {
+                color: #61afef;
+              }
+
+              &.punctuation {
+                color: #abb2bf;
+              }
+
+              &.operator {
+                color: #d19a66;
+              }
+
+              &.code {
+                color: #e5c07b;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1350px) {
+  .coding {
+    padding: 0px 20px;
+    margin-top: 20px;
+    .wrapper {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .coding {
+    padding: 0px 20px;
+    .wrapper {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+  .coding {
+    padding: 0px 20px;
+    .wrapper {
+      width: 100% !important;
+      .content {
+        display: block;
+        margin-top: 40px;
+        .withoutThirdWeb {
+          width: 100%;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}

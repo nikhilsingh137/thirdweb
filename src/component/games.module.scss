@@ -1,0 +1,116 @@
+.games {
+  margin-top: 40px;
+  padding-bottom: 163px;
+  .gameTop {
+    width: 1170px;
+    margin: auto;
+    padding-bottom: 40px;
+    .heading {
+      display: block;
+      text-align: center;
+      h2 {
+        font-size: 50px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        color: #ddd;
+        font-size: 22px;
+        margin: 0;
+        padding-top: 10px;
+      }
+    }
+    .contant {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+      a {
+        width: 28%;
+        display: block;
+        border: solid 1px rgb(80 80 80 / 30%);
+        padding: 20px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.6s;
+        &:hover {
+          background: #622aff;
+        }
+        span {
+          display: block;
+          margin-top: 10px;
+          img {
+            width: 100%;
+          }
+        }
+        .text {
+          display: block;
+          margin-top: 40px;
+          h2 {
+            font-size: 22px;
+            color: #fff;
+            margin: 0;
+            font-weight: 500;
+          }
+          p {
+            color: #999;
+            margin: 0;
+            font-size: 17px;
+            margin-top: 20px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1350px) {
+  .games {
+    padding: 0px 20px;
+    .gameTop {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .games {
+    padding: 0px 20px;
+    .gameTop {
+      width: 100% !important;
+      .heading {
+        margin-top: 100px;
+      }
+      .contant a {
+        padding: 20px 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+  .games {
+    padding: 0px 20px;
+    .gameTop {
+      width: 100% !important;
+      .heading {
+        h2 {
+          font-size: 45px;
+        }
+      }
+      .contant {
+        display: block;
+        a {
+          width: 100%;
+          padding: 0;
+          margin-top: 20px;
+          .text {
+            padding: 20px 10px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,113 @@
+.container {
+  display: block;
+  margin-top: 20px;
+
+  .wrapper {
+    width: 1170px;
+    margin: auto;
+    padding-bottom: 80px;
+    .heading {
+      display: block;
+      text-align: center;
+      h2 {
+        font-size: 50px;
+        margin: 0;
+        color: #fff;
+      }
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 60px;
+      .data {
+        width: 32%;
+        display: block;
+        border: solid 1px rgb(80, 80, 80, 0.5);
+        border-radius: 10px;
+        &:nth-child(1) .text h2 {
+          color: rgb(159 157 242);
+        }
+        &:nth-child(2) .text h2 {
+          color: rgb(222 166 214);
+        }
+        &:nth-child(3) .text h2 {
+          color: rgb(128 33 253);
+        }
+        a {
+          text-decoration: none;
+          display: block;
+
+          span {
+            width: 100%;
+            display: block;
+            height: 250px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-top-left-radius: 10px;
+              border-top-right-radius: 10px;
+            }
+          }
+          .text {
+            display: block;
+            padding: 25px 25px;
+            h2 {
+              margin: 0;
+              font-size: 23px;
+              font-weight: 500;
+              color: #fff;
+            }
+            p {
+              font-size: 17px;
+              color: rgb(255 255 255 / 70%);
+              margin: 0;
+              padding-top: 20px;
+              font-weight: 500;
+              line-height: 28px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1350px) {
+  .container {
+    padding: 0px 22px;
+    .wrapper {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .container {
+    padding: 0px 22px;
+    .wrapper {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+  .container {
+    padding: 0px 22px;
+    .wrapper {
+      width: 100% !important;
+      .heading {
+        h2 {
+          font-size: 40px;
+        }
+      }
+      .content {
+        display: block;
+        .data {
+          width: 100%;
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}

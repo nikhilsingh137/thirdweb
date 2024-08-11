@@ -1,0 +1,159 @@
+.clientTop {
+  padding-bottom: 70px;
+  .client {
+    width: 1170px;
+    margin: auto;
+    .divide {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      .text {
+        display: block;
+        span {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          img {
+            width: 28px;
+            height: 28px;
+            object-fit: cover;
+          }
+          h2 {
+            font-size: 19px;
+            text-transform: capitalize;
+            color: #fff;
+            font-weight: 500;
+            margin: 0;
+          }
+        }
+        h3 {
+          font-size: 45px;
+          text-transform: capitalize;
+          color: #fff;
+          font-weight: 700;
+          width: 80%;
+          margin-top: 5px;
+        }
+        p {
+          font-size: 20px;
+          text-transform: capitalize;
+          color: #ddd;
+          font-weight: 500;
+          width: 70%;
+          margin-top: 30px;
+          line-height: 31px;
+        }
+        a {
+          text-decoration: none;
+          color: #000;
+          font-size: 17px;
+          background: #fff;
+          font-weight: 500;
+          padding: 14px 40px;
+          display: inline-block;
+          border-radius: 5px;
+          margin-top: 20px;
+          transition: 0.6s;
+          &:hover {
+            background: #ddd;
+          }
+        }
+      }
+      .image {
+        height: 400px;
+        width: 746px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1350px) {
+  .clientTop {
+    padding: 0px 20px;
+    .client {
+      width: 100% !important;
+    }
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .clientTop {
+    padding: 0px 20px;
+    .client {
+      width: 100% !important;
+      .divide {
+        margin-top: 20px;
+        .text {
+          span {
+            img {
+              width: 25px;
+              height: 25px;
+            }
+            h2 {
+              font-size: 16px;
+            }
+          }
+          h3 {
+            font-size: 35px;
+            margin: 0;
+          }
+          p {
+            font-size: 18px;
+            margin: 15px 0px;
+          }
+          a {
+            padding: 10px 30px;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+  .clientTop {
+    padding: 0px 20px;
+    .client {
+      width: 100% !important;
+      .divide {
+        margin-top: 20px;
+        display: block;
+        .text {
+          width: 100%;
+          span {
+            img {
+              width: 25px;
+              height: 25px;
+            }
+            h2 {
+              font-size: 16px;
+            }
+          }
+          h3 {
+            font-size: 35px;
+            margin: 0;
+            width: 100%;
+          }
+          p {
+            font-size: 18px;
+            margin: 15px 0px;
+            width: 100%;
+          }
+          a {
+            padding: 10px 30px;
+            margin-top: 10px;
+          }
+        }
+        .image {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

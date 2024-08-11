@@ -1,0 +1,16 @@
+.unit {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  li {
+    padding: 15px 30px;
+    border-bottom: solid 2px #fff;
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 500;
+      color: #fff;
+    }
+  }
+}

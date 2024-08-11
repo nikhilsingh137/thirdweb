@@ -1,0 +1,213 @@
+.container {
+  display: block;
+  margin-top: 60px;
+  .wrapper {
+    width: 1170px;
+    margin: auto;
+    padding-bottom: 50px;
+    .heading {
+      display: block;
+      text-align: center;
+      h2 {
+        font-size: 60px;
+        color: #f2f2f7;
+        margin: 0;
+      }
+      h3 {
+        font-size: 60px;
+        background-image: linear-gradient(to right, #4dabee, #692ac1);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        margin: 0;
+      }
+      p {
+        font-size: 20px;
+        color: #666;
+        font-weight: 500;
+        margin: 0;
+        padding-top: 15px;
+        a {
+          color: #0000ff;
+          text-decoration: none;
+          transition: 0.6s;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 80px;
+      .detail {
+        width: 31%;
+        display: block;
+        &:nth-child(2) .data {
+          background: #000;
+          &::after {
+            position: absolute;
+            background-image: linear-gradient(to bottom, #4dabee, #692ac1);
+            top: 0px;
+            content: "";
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            border-radius: 8px;
+            overflow: visible;
+            -webkit-filter: blur(8px);
+            filter: blur(8px);
+            z-index: -1;
+          }
+        }
+        &:nth-child(2) .data h3 {
+          padding-top: 40px;
+        }
+        .data {
+          border: solid 1px rgb(80, 80, 80, 0.5);
+          display: block;
+          padding: 30px 30px;
+          border-radius: 8px;
+          position: relative;
+          height: 450px;
+
+          h2 {
+            font-size: 30px;
+            color: #fff;
+            margin: 0;
+          }
+          p {
+            font-size: 16px;
+            color: #666;
+            margin: 0;
+            font-weight: 500;
+            padding-top: 10px;
+          }
+          h3 {
+            font-size: 40px;
+            color: #fff;
+            margin: 0;
+            padding-top: 20px;
+          }
+
+          .list {
+            display: block;
+            margin-top: 30px;
+
+            ul {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              display: block;
+              li {
+                color: #666;
+                line-height: 30px;
+                font-weight: 500;
+              }
+            }
+          }
+        }
+        .button {
+          display: block;
+          margin-top: 40px;
+          width: 100%;
+          a {
+            border: solid 1px #666;
+            border-radius: 5px;
+            width: 100%;
+            display: flex;
+            height: 45px;
+            text-decoration: none;
+            font-size: 17px;
+            color: #666;
+            font-weight: 500;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        &:nth-child(2) .button a {
+          background: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1350px) {
+  .container {
+    padding: 0px 22px;
+    .wrapper {
+      width: 100% !important;
+      .heading {
+        margin-top: 120px;
+        padding-top: 120px;
+      }
+      .detail {
+        .data {
+          height: 520px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .container {
+    padding: 0px 22px;
+    .wrapper {
+      width: 100% !important;
+      .heading {
+        margin-top: 120px;
+        padding-top: 120px;
+        h2 {
+          font-size: 50px;
+        }
+        h3 {
+          font-size: 50px;
+        }
+      }
+      .content {
+        display: block;
+        margin-top: 50px;
+        .detail {
+          width: 100%;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+  .container {
+    padding: 0px 22px;
+    .wrapper {
+      width: 100% !important;
+      .heading {
+        margin-top: 120px;
+        padding-top: 120px;
+        h2 {
+          font-size: 40px;
+        }
+        h3 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+      .content {
+        display: block;
+        margin-top: 50px;
+        .detail {
+          width: 100%;
+          margin-top: 30px;
+          .data {
+            height: 525px !important;
+          }
+        }
+      }
+    }
+  }
+}
