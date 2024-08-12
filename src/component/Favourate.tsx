@@ -5,9 +5,17 @@ const Favourate = () => {
   const [favorate, setFavorate] = useState<any[]>([]);
 
   useEffect(() => {
-    const savedMovies = localStorage.getItem("favorate");
-    const favorates = savedMovies ? JSON.parse(savedMovies) : [];
-    setFavorate(favorates);
+    const handleStorage = () => {
+      const savedMovies = localStorage.getItem("favorate");
+      const favorates = savedMovies ? JSON.parse(savedMovies) : [];
+      setFavorate(favorates);
+    };
+    const handleFavorate = () => {
+      handleStorage();
+    };
+
+    window.addEventListener("updateFavorate", handleFavorate);
+    return () => window.removeEventListener("updateFavorate", handleFavorate);
   }, []);
 
   const handleFavorate = (imdbID: any) => {

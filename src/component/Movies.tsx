@@ -24,6 +24,7 @@ const Movies = () => {
     if (!favorates.some((item: any) => item.imdbID === movie.imdbID)) {
       favorates.push(movie);
       localStorage.setItem("favorate", JSON.stringify(favorates));
+      window.dispatchEvent(new Event("updateFavorate"));
     }
   };
   return (
