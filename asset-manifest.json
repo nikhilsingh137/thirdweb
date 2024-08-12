@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/nikhilsingh137/thirdweb/static/css/main.1c36c1bc.css",
-    "main.js": "/nikhilsingh137/thirdweb/static/js/main.9b2e115d.js",
-    "static/media/thirdweb-removebg-preview.png": "/nikhilsingh137/thirdweb/static/media/thirdweb-removebg-preview.acc68bb03914a1268e29.png",
-    "index.html": "/nikhilsingh137/thirdweb/index.html",
-    "main.1c36c1bc.css.map": "/nikhilsingh137/thirdweb/static/css/main.1c36c1bc.css.map",
-    "main.9b2e115d.js.map": "/nikhilsingh137/thirdweb/static/js/main.9b2e115d.js.map"
+    "main.css": "/thirdweb/static/css/main.1c36c1bc.css",
+    "main.js": "/thirdweb/static/js/main.9990d080.js",
+    "static/media/thirdweb-removebg-preview.png": "/thirdweb/static/media/thirdweb-removebg-preview.acc68bb03914a1268e29.png",
+    "index.html": "/thirdweb/index.html",
+    "main.1c36c1bc.css.map": "/thirdweb/static/css/main.1c36c1bc.css.map",
+    "main.9990d080.js.map": "/thirdweb/static/js/main.9990d080.js.map"
   },
   "entrypoints": [
     "static/css/main.1c36c1bc.css",
-    "static/js/main.9b2e115d.js"
+    "static/js/main.9990d080.js"
   ]
 }
