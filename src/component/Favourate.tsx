@@ -15,7 +15,9 @@ const Favourate = () => {
     };
 
     window.addEventListener("updateFavorate", storageHandler);
-    return () => window.removeEventListener("updateFavorate", storageHandler);
+    return () => {
+      window.removeEventListener("updateFavorate", storageHandler);
+    };
   }, []);
 
   const handleFavorate = (imdbID: any) => {
