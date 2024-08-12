@@ -10,18 +10,19 @@ const Favourate = () => {
       const favorates = savedMovies ? JSON.parse(savedMovies) : [];
       setFavorate(favorates);
     };
-    const handleFavorate = () => {
+    const storageHandler = () => {
       handleStorage();
     };
 
-    window.addEventListener("updateFavorate", handleFavorate);
-    return () => window.removeEventListener("updateFavorate", handleFavorate);
+    window.addEventListener("updateFavorate", storageHandler);
+    return () => window.removeEventListener("updateFavorate", storageHandler);
   }, []);
 
   const handleFavorate = (imdbID: any) => {
     const updatedData = favorate.filter((item) => item.imdbID !== imdbID);
     setFavorate(updatedData);
     localStorage.setItem("favorate", JSON.stringify(updatedData));
+    window.dispatchEvent(new Event("updateFavorate"));
   };
   return (
     <div className={Style.container}>
