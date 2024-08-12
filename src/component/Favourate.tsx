@@ -10,6 +10,7 @@ const Favourate = () => {
       const favorates = savedMovies ? JSON.parse(savedMovies) : [];
       setFavorate(favorates);
     };
+    handleStorage();
     const storageHandler = () => {
       handleStorage();
     };
