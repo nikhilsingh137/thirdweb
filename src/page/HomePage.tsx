@@ -13,6 +13,7 @@ import App from "../component/App";
 import Form from "../component/Form";
 import Movies from "../component/Movies";
 import Favourate from "../component/Favourate";
+import Tab from "../component/Tab";
 
 const HomePage = () => {
   return (
@@ -31,6 +32,7 @@ const HomePage = () => {
       <Form />
       <Movies />
       <Favourate />
+      <Tab />
     </>
   );
 };

@@ -1,0 +1,123 @@
+.container {
+  display: block;
+  margin-top: 50px;
+  .item {
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    h2 {
+      font-size: 20px;
+      color: #000;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      margin: 0;
+      background: #ddd;
+      cursor: pointer;
+      &.active {
+        background: #808;
+        color: #fff;
+      }
+    }
+    .borderLine {
+      display: block;
+      height: 4px;
+      background: #fff;
+      width: 10%;
+      transition: 0.6s;
+      margin: 24px 0px;
+      &.activeLine {
+        background: #ff0000;
+      }
+    }
+  }
+  .content {
+    display: block;
+    background: #0000ff;
+    width: 1170px;
+    margin: 40px auto;
+    overflow-x: hidden;
+    span {
+      display: none;
+      &.active {
+        display: block;
+      }
+      img {
+        width: 100%;
+      }
+      .text {
+        display: block;
+        padding: 15px;
+        p {
+          font-size: 18px;
+          color: #fff;
+          margin: 0;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1350px) {
+  .container {
+    padding: 0px 20px;
+
+    .item {
+      width: 100%;
+      h2 {
+        width: 50px;
+        height: 45px;
+      }
+    }
+    .content {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 991px) {
+  .container {
+    padding: 0px 20px;
+    .item {
+      width: 100%;
+      h2 {
+        width: 52px;
+        height: 41px;
+      }
+    }
+    .content {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 767px) {
+  .container {
+    padding: 0px 22px;
+
+    .item {
+      display: flex;
+      overflow-x: auto;
+      white-space: nowrap;
+      width: calc(100% + 10px);
+      gap: 40px;
+      padding: 10px 0px;
+      h2 {
+        font-size: 18px;
+        width: 52px;
+        height: 52px;
+        flex-shrink: 0;
+      }
+    }
+    .content {
+      width: 100%;
+    }
+  }
+}

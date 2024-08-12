@@ -8,6 +8,7 @@ import {
   IPricing,
   ISolution,
   IStack,
+  ITab,
 } from "./Article";
 
 interface ApiState {
@@ -20,6 +21,7 @@ interface ApiState {
   pricingData: IPricing | null;
   solutionData: ISolution | null;
   moviesData: IMovies | null;
+  tabData: ITab | null;
   error: boolean;
 }
 
@@ -76,6 +78,12 @@ export const fetchMovies = createAsyncThunk(
     return moviesData.json();
   }
 );
+export const fetchTab = createAsyncThunk("fetchTab", async () => {
+  const tabData = await fetch(
+    `https://nikhilsingh137.github.io/React_data/data/header.json`
+  );
+  return tabData.json();
+});
 
 export const initialState: ApiState = {
   isloading: false,
@@ -87,6 +95,7 @@ export const initialState: ApiState = {
   pricingData: null,
   solutionData: null,
   moviesData: null,
+  tabData: null,
   error: false,
 };
 
@@ -121,6 +130,9 @@ export const counterSlice = createSlice({
     });
     builder.addCase(fetchMovies.fulfilled, (state, action) => {
       state.moviesData = action.payload;
+    });
+    builder.addCase(fetchTab.fulfilled, (state, action) => {
+      state.tabData = action.payload;
     });
     builder.addCase(fetchHeader.rejected, (state, action) => {
       state.error = true;
